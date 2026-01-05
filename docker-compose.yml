@@ -1,0 +1,19 @@
+
+version: '3.8'
+
+services:
+  invoice-manager:
+    build:
+      context: .
+      args:
+        - API_KEY=${API_KEY}
+    image: smart-invoice-manager:latest
+    container_name: invoice-app
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./data:/app/data
+    environment:
+      - API_KEY=${API_KEY}
+      - NODE_ENV=production
+    restart: always

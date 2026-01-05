@@ -1,0 +1,7 @@
+{
+  "name": "SmartInvoice-Web版",
+  "description": "An intelligent invoice management tool using Gemini 3.0 to extract data from PDF/images into a searchable, exportable database.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
